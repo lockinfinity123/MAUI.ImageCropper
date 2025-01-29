@@ -1,4 +1,5 @@
-﻿namespace ImageCropper.Maui
+﻿
+namespace Maui.ImageCropper.Platforms.iOS
 {
     public class Platform
     {

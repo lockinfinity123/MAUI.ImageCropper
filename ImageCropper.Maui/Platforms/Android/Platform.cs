@@ -3,7 +3,7 @@ using Com.Canhub.Cropper;
 using Fragment = AndroidX.Fragment.App.Fragment;
 using Object = Java.Lang.Object;
 
-namespace ImageCropper.Maui
+namespace Maui.ImageCropper.Platforms.Android
 {
     public class Platform : Fragment, IActivityResultCallback
     {
@@ -12,7 +12,7 @@ namespace ImageCropper.Maui
         public void Init(MauiAppCompatActivity activity)
         {
             DependencyService.Register<IImageCropperWrapper, PlatformImageCropper>();
-            AppActivity = activity;;
+            AppActivity = activity; ;
             ImageCropperActivityResultLauncher = activity.RegisterForActivityResult(new CropImageContract(), this);
         }
 

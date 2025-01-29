@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImageCropper.Maui", "ImageCropper.Maui\ImageCropper.Maui.csproj", "{DD656A7B-EB73-4582-8077-C08994ABA248}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Maui.ImageCropper", "ImageCropper.Maui\Maui.ImageCropper.csproj", "{DD656A7B-EB73-4582-8077-C08994ABA248}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Library", "Library", "{1F32F736-E6C2-426D-A56D-29BFE6E8B33D}"
 EndProject

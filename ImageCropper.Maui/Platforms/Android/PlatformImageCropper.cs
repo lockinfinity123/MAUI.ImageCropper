@@ -1,8 +1,9 @@
 ﻿using Com.Canhub.Cropper;
 using System.Diagnostics;
 using Android.Graphics;
+using androidplatform = Android.Net;
 
-namespace ImageCropper.Maui
+namespace Maui.ImageCropper.Platforms.Android
 {
     // All the code in this file is only included on Android.
     public class PlatformImageCropper : IImageCropperWrapper
@@ -43,8 +44,8 @@ namespace ImageCropper.Maui
                 {
                     cropImageOptions.ActivityTitle = new Java.Lang.String(imageCropper.PageTitle);
                 }
-
-                Platform.ImageCropperActivityResultLauncher.Launch(new CropImageContractOptions(Android.Net.Uri.FromFile(new Java.IO.File(imageFile)), cropImageOptions));
+                
+                Platform.ImageCropperActivityResultLauncher.Launch(new CropImageContractOptions(androidplatform.Uri.FromFile(new Java.IO.File(imageFile)), cropImageOptions));
 
             }
             catch (Exception ex)
