@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net8.0-ios</TargetFramework>
+    <Nullable>enable</Nullable>
+		<ImplicitUsings>true</ImplicitUsings>
+		<IsBindingProject>true</IsBindingProject>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<AssemblyVersion>2.6.1.8</AssemblyVersion>
+		<FileVersion>$(AssemblyVersion)</FileVersion>
+		<Version>$(AssemblyVersion)</Version>
+		<Title>TOCropViewController</Title>
+		<RepositoryUrl>https://github.com/jbowmanp1107/ImageCropper.Maui</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/jbowmanp1107/ImageCropper.Maui</PackageProjectUrl>
+		<Description>.NET MAUI iOS Bindings for TOCropViewController</Description>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+	</PropertyGroup>
+	<ItemGroup>
+		<ObjcBindingApiDefinition Include="ApiDefinition.cs" />
+		<ObjcBindingCoreSource Include="StructsAndEnums.cs" />
+	</ItemGroup>
+
+  <ItemGroup>
+		<NativeReference Include="TOCropViewController.xcframework">
+			<Kind>Framework</Kind>
+		</NativeReference>
+	</ItemGroup>
+
+  <ItemGroup>
+		<None Include="..\LICENSE">
+			<Link>LICENSE</Link>
+			<PackagePath>\</PackagePath>
+			<Pack>True</Pack>
+		</None>
+	</ItemGroup>
+</Project>
